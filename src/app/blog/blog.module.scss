@@ -1,0 +1,352 @@
+@import "../variables.scss";
+
+.inner_banner {
+  height: 70px;
+  background: url("../../../public/images/slide_bg2.jpg");
+  position: relative;
+  background-size: cover;
+  @media (max-width:991px){
+      display: none;
+  }
+  &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      opacity: 0.8;
+  }
+  .inner_banner_text {
+      h1 {
+          position: absolute;
+          bottom: 100px;
+          color: #fff;
+          font-size: 100px;
+          text-transform: uppercase;
+          font-family: Montserrat;
+          font-weight: 800;
+      }
+  }
+}
+.case_studies {
+  padding: 60px 0;
+  @media (max-width:991px){
+      margin-top: 50px;
+  }
+  .cust_heading {
+      position: relative;
+      text-align: center;
+      margin-bottom: 80px;
+
+      @media (max-width:767px){
+        margin-bottom: 20px;
+      }
+      h4 {
+          line-height: 18px;
+          font-size: 12px;
+          color: #FFD100;
+          span {
+              position: relative;
+              padding-left: 48px;
+              &:before {
+                  position: absolute;
+                  content: '';
+                  left: 0;
+                  top: 50%;
+                  transform: translate(0, -50%);
+                  height: 2px;
+                  background: #FFD100;
+                  width: 40px;
+              }
+          }
+      }
+      h3 {
+          font-size: 33px;
+          font-weight: 400;
+      }
+      p {
+          margin: auto;
+      }
+  }
+  .flex_row {
+      display: flex;
+      justify-content: space-between;
+      gap: 25px;
+      flex-wrap: wrap;
+
+      @media (max-width:991px){
+          flex-wrap: wrap;
+      }
+      @media (max-width:991px) and (min-width:768px){
+          justify-content: center;
+      }
+      .case_studies_bl {
+        padding: 15px;
+        transition: 1s;
+        width: calc(33.33% - 20px);
+        @media (max-width:1200px) and (min-width:768px){
+          width: calc(50% - 20px);
+        }
+        @media (max-width:767px){
+          width: 100%;
+        }
+        &:hover{
+          background: #242b34;
+          transition: 1.5s;
+
+          h5, h6{
+            color: #fff !important;
+          }
+        }
+          @media (max-width:991px) and (min-width:768px){
+              width: 48%;
+          }
+          .img_bl{
+              height: 300px;
+              overflow: hidden;
+              position: relative;
+
+              &:before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 00;
+                width: 100%;
+                height: 100%;
+                background: #000;
+                opacity: .6;
+            
+              }
+
+              h6{
+                position: absolute;
+                bottom: 40px;
+                color: #fff;
+                font-size: 30px;
+                width: 80%;
+                border-bottom: 2px solid #ffd100;
+                max-width: 500px;
+                padding-bottom: 16px;
+                text-align: center;
+                left: 0;
+                right: 0;
+                margin: auto;
+                z-index: 99;
+                @media (max-width:767px){
+                  font-size: 25px;
+                  width: 95%;
+                }
+                @media (max-width:1200px) and (min-width:768px){
+                  font-size: 25px;
+                  width: 95%;
+                }
+                @media (max-width:1600px) and (min-width:1201px){
+                  font-size: 22px;
+                  width: 95%;
+                }
+              }
+             
+              img{
+                  // height: 300px;
+                  object-fit: cover;
+                  width: 100%;
+              }
+          }
+          .case_text {
+              padding: 20px 0 20px 00px;
+
+              a{
+                color: #dab200;
+                font-weight: 600;
+              }
+
+              @media (max-width:767px){
+                  padding: 15px;
+              }
+              h5 {
+                  letter-spacing: 2px;
+                  color: #747474;
+                  transition: 0.2s;
+                  font-size: 15px;
+                  text-transform: uppercase;
+                  font-weight: 500;
+                  margin-bottom: 12px;
+                  position: relative;
+                  &:before{
+                      content: '';
+                      position: absolute;
+                      bottom: -14px;
+                      left: -75px;
+                      height: 3px;
+                      width: 100px;
+                      background: #FFD100;
+                      opacity: 0;
+                  }
+              }
+              h6{
+                font-size: 20px;
+                line-height: 31px;
+                font-weight: 400;
+                text-transform: capitalize;
+
+                @media (max-width:1600px) and (min-width:1201px){
+                  font-size: 17px;
+                  line-height: 26px;
+                  font-weight: 400;
+                  text-transform: capitalize;
+                }
+                @media (max-width:1200px) and (min-width:768px){
+                  font-size: 18px;
+                }
+                  @media (max-width:767px){
+                      font-size: 16px;
+                      font-weight: 500;
+                      line-height: 26px;
+                  }
+              }
+          }
+      }
+  }
+}
+.imgBlock {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+.imgBlock {
+  padding-bottom: 100px;
+}
+
+.featured_jobs {
+  padding: 80px 0;
+
+ 
+
+  .title_block {
+    text-align: center;
+
+    p {
+      margin: auto;
+      max-width: 40%;
+    }
+  }
+  .flex_row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 50px;
+  }
+  .job_single {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 15px;
+    transition: 0.35s;
+
+    &:hover{
+      border: 1px solid #ffd100;
+    }
+    .job_img{
+      img{
+        border-radius: 7px;
+      }
+    }
+    .title_info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      padding: 20px 0;
+      border-bottom: 1px solid #eee;
+      gap: 12px;
+
+      .job_title_img {
+        transform: translateY(-2px);
+        img {
+          border-radius: 50%;
+        }
+      }
+
+      h3 {
+        font-size: 1.125rem;
+        font-weight: 600;
+        transition: 0.35s;
+        margin-bottom: 0;
+      }
+      p {
+        margin: 0;
+      }
+    }
+    .job_detail {
+      ul {
+        padding: 0;
+        margin: 0;
+
+        li {
+          position: relative;
+          list-style: none;
+          padding-left: 15px;
+          line-height: 38px;
+
+          &:before {
+            content: "";
+            height: 8px;
+            width: 8px;
+            border-radius: 50%;
+            background-color: #d5dfdd;
+            margin-right: 8px;
+            position: absolute;
+            top: 14px;
+            left: 0;
+          }
+        }
+      }
+    }
+    .action_btn {
+      display: flex;
+      margin-top: 15px;
+
+      .job_type {
+        p {
+          margin: 0;
+          background-color: #f3e8c1;
+          padding: 4px 20px;
+          border-radius: 50px;
+          font-size: 14px;
+          font-weight: 600;
+
+          &.full_time{
+            background: #34596b33;
+          }
+        }
+      }
+      .apply_now {
+        button {
+          align-self: center;
+          text-align: center;
+          font-weight: 700;
+          margin: 0px auto 0 0;
+          padding: 4px 10px 4px 10px;
+          border-radius: 38px;
+          border-color: #212529;
+          color: #212529;
+          background: transparent;
+          position: relative;
+          font-size: 13px;
+          border: 0;
+          text-decoration: underline;
+          background-color: #f0f0f0;
+          padding: 4px 20px;
+        }
+      }
+    }
+    .job_img {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

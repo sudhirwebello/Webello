@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="118" height="113.95" viewBox="0 0 118 113.95">
+  <g id="Group_45484" data-name="Group 45484" transform="translate(-543 -4222)">
+    <circle id="Ellipse_50" data-name="Ellipse 50" cx="25.5" cy="25.5" r="25.5" transform="translate(565 4274)" fill="#1893d2" opacity="0.26"/>
+    <g id="Group_45397" data-name="Group 45397" transform="translate(541.122 4220.628)">
+      <g id="Group_45406" data-name="Group 45406" transform="translate(3.643 3.806)">
+        <path id="Path_63393" data-name="Path 63393" d="M128,233.328a5.186,5.186,0,0,0,5.005,4.951h4.9a5.136,5.136,0,0,0,4.951-4.951v-.749a4.5,4.5,0,0,0-3.358-4.227l-8.1-2.425A4.537,4.537,0,0,1,128,221.7v-.749A5.136,5.136,0,0,1,132.951,216H137.9a5.136,5.136,0,0,1,4.951,4.951v2.475" transform="translate(-90.569 -151.87)" fill="none" stroke="#3f3f3f" stroke-width="4"/>
+        <line id="Line_37" data-name="Line 37" y1="8" transform="translate(44.234 55.566)" fill="none" stroke="#3f3f3f" stroke-width="4"/>
+        <line id="Line_38" data-name="Line 38" y2="6" transform="translate(44.234 87.566)" fill="none" stroke="#3f3f3f" stroke-width="4"/>
+        <ellipse id="Ellipse_42" data-name="Ellipse 42" cx="24.5" cy="23.5" rx="24.5" ry="23.5" transform="translate(21.234 51.566)" fill="none" stroke="#3f3f3f" stroke-width="4"/>
+        <line id="Line_39" data-name="Line 39" x2="16.967" y2="16.967" transform="translate(62.546 91.721)" fill="none" stroke="#3f3f3f" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+        <circle id="Ellipse_43" data-name="Ellipse 43" cx="7.5" cy="7.5" r="7.5" transform="translate(0.234 29.566)" fill="none" stroke="#3f3f3f" stroke-width="4"/>
+        <ellipse id="Ellipse_44" data-name="Ellipse 44" cx="7.5" cy="7" rx="7.5" ry="7" transform="translate(32.234 5.566)" fill="none" stroke="#3f3f3f" stroke-width="4"/>
+        <circle id="Ellipse_45" data-name="Ellipse 45" cx="7" cy="7" r="7" transform="translate(70.234 24.566)" fill="none" stroke="#3f3f3f" stroke-width="4"/>
+        <circle id="Ellipse_46" data-name="Ellipse 46" cx="7.5" cy="7.5" r="7.5" transform="translate(99.234 -0.434)" fill="none" stroke="#3f3f3f" stroke-width="4"/>
+        <line id="Line_40" data-name="Line 40" y1="15.709" x2="20.422" transform="translate(13.604 16.668)" fill="none" stroke="#3f3f3f" stroke-width="4"/>
+        <line id="Line_41" data-name="Line 41" x2="24.019" y2="12.81" transform="translate(46.466 15.644)" fill="none" stroke="#3f3f3f" stroke-width="4"/>
+        <line id="Line_42" data-name="Line 42" y1="15.256" x2="18.308" transform="translate(82.736 11.944)" fill="none" stroke="#3f3f3f" stroke-width="4"/>
+        <line id="Line_43" data-name="Line 43" y2="31" transform="translate(8.234 54.566)" fill="none" stroke="#3f3f3f" stroke-linecap="round" stroke-width="4"/>
+        <line id="Line_44" data-name="Line 44" y2="8" transform="translate(21.234 46.566)" fill="none" stroke="#3f3f3f" stroke-linecap="round" stroke-width="4"/>
+        <line id="Line_45" data-name="Line 45" y2="12" transform="translate(32.234 32.566)" fill="none" stroke="#3f3f3f" stroke-linecap="round" stroke-width="4"/>
+        <line id="Line_46" data-name="Line 46" y2="9" transform="translate(44.234 32.566)" fill="none" stroke="#3f3f3f" stroke-linecap="round" stroke-width="4"/>
+        <line id="Line_47" data-name="Line 47" y2="6" transform="translate(57.234 38.566)" fill="none" stroke="#3f3f3f" stroke-linecap="round" stroke-width="4"/>
+        <line id="Line_48" data-name="Line 48" y2="8" transform="translate(70.234 46.566)" fill="none" stroke="#3f3f3f" stroke-linecap="round" stroke-width="4"/>
+        <line id="Line_49" data-name="Line 49" y2="36" transform="translate(82.234 49.566)" fill="none" stroke="#3f3f3f" stroke-linecap="round" stroke-width="4"/>
+        <line id="Line_50" data-name="Line 50" y2="50" transform="translate(93.234 37.566)" fill="none" stroke="#3f3f3f" stroke-linecap="round" stroke-width="4"/>
+        <line id="Line_51" data-name="Line 51" y2="60" transform="translate(106.234 27.566)" fill="none" stroke="#3f3f3f" stroke-linecap="round" stroke-width="4"/>
+      </g>
+    </g>
+  </g>
+</svg>
