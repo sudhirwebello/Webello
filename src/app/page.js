@@ -748,6 +748,150 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <section class="our_modals">
+        <div class="cust_container">
+          <div class="row_flex">
+            <Image
+              decoding="async"
+              src="images/bg_shape.svg"
+              width={1520}
+              height={638}
+              alt="Shape"
+              class="how-we-do-bg"
+            />
+            <div class="modal_lefContent">
+              <div class="top">
+                <h5 class="">Our Model</h5>
+                <h1 class="">How we do</h1>{" "}
+                <p>Save time and money with our powerful method.</p>
+              </div>
+
+              <a
+                href=""
+                class="theme-btn"
+              >
+                Learn More <i class="iconoir-arrow-up-right"></i>
+              </a>
+            </div>
+            <div class="modal_rightContent">
+              <div class="item_box d-flex align-items-center justify-content-center">
+                <div class="card_inner">
+                  <div class="circle-shape"></div>
+                  <div class="line-shape"></div>
+
+                  <div class="card_icon">
+                    <Image
+                      decoding="async"
+                      src="images/micon1.svg"
+                      width={30}
+                      height={30}
+                    />
+                  </div>
+
+                  <div class="card_text">
+                    <h4>Brainstroming</h4>
+                    <p>Ideas</p>
+                  </div>
+                </div>
+
+                <div class="card_inner">
+                  <div class="circle-shape"></div>
+                  <div class="line-shape"></div>
+
+                  <div class="card_icon">
+                    <Image
+                      decoding="async"
+                      src="images/micon2.svg"
+                      width={30}
+                      height={30}
+                    />
+                  </div>
+                  <div class="card_text">
+                    <h4>Product</h4>
+                    <p>Design</p>
+                  </div>
+                </div>
+
+                <div class="card_inner">
+                  <div class="circle-shape"></div>
+                  <div class="line-shape"></div>
+
+                  <div class="card_icon">
+                    <Image
+                      decoding="async"
+                      src="images/micon3.svg"
+                      width={30}
+                      height={30}
+                    />
+                  </div>
+                  <div class="card_text">
+                    <h4>Front-End</h4>
+                    <p>Development</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item_box d-flex align-items-center justify-content-center">
+                <div class="card_inner">
+                  <div class="circle-shape"></div>
+                  <div class="line-shape"></div>
+
+                  <div class="card_icon">
+                    <Image
+                      decoding="async"
+                      src="images/micon4.svg"
+                      width={30}
+                      height={30}
+                    />
+                  </div>
+                  <div class="card_text">
+                    <h4>SEO</h4>
+                    <p>Optimization</p>
+                  </div>
+                </div>
+
+                <div class="card_inner">
+                  <div class="circle-shape"></div>
+                  <div class="line-shape"></div>
+
+                  <div class="card_icon">
+                    <Image
+                      decoding="async"
+                      src="images/micon5.svg"
+                      width={30}
+                      height={30}
+                    />
+                  </div>
+                  <div class="card_text">
+                    <h4>Back-End</h4>
+                    <p>Development</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item_box d-flex align-items-center justify-content-center">
+                <div class="card_inner">
+                  <div class="circle-shape"></div>
+                  <div class="line-shape"></div>
+
+                  <div class="card_icon">
+                    <Image
+                      decoding="async"
+                      src="images/micon6.svg"
+                      width={30}
+                      height={30}
+                    />
+                  </div>
+                  <div class="card_text">
+                    <h4>Digital</h4>
+                    <p>Marketing</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <div className={styles.case_studies}>
         <div className={styles.flex_row}>
           <div className={styles.half_block}>

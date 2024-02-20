@@ -33,8 +33,7 @@ export default function Contact() {
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
               <div className={styles.ofc_address}>
-                <h6>61 HEADQUARTERS</h6>
-                <h5>IT Park, Chandigarh</h5>
+                <h5>India</h5>
                 <p>Plot No.14, Rajiv Gandhi Technology Park,</p>
                 <p>Chandigarh UT, 160101</p>
                 <p>
@@ -131,27 +130,22 @@ export default function Contact() {
                   </li>
                   <li>
                     <a href="">
-                    <svg class="svg-inline--fa fa-twitter fa-w-16" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 72 72" viewBox="0 0 72 72" id="twitter-x"><switch><g><path fill="currentColor" d="M42.5,31.2L66,6h-6L39.8,27.6L24,6H4l24.6,33.6L4,66
-			h6l21.3-22.8L48,66h20L42.5,31.2z M12.9,10h8l38.1,52h-8L12.9,10z"></path></g></switch></svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
                       <svg
-                        className="svg-inline--fa fa-behance fa-w-18"
-                        aria-hidden="true"
-                        focusable="false"
-                        data-prefix="fab"
-                        data-icon="behance"
-                        role="img"
+                        class="svg-inline--fa fa-twitter fa-w-16"
                         xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 576 512"
-                        data-fa-i2svg=""
+                        enable-background="new 0 0 72 72"
+                        viewBox="0 0 72 72"
+                        id="twitter-x"
                       >
-                        <path
-                          fill="currentColor"
-                          d="M232 237.2c31.8-15.2 48.4-38.2 48.4-74 0-70.6-52.6-87.8-113.3-87.8H0v354.4h171.8c64.4 0 124.9-30.9 124.9-102.9 0-44.5-21.1-77.4-64.7-89.7zM77.9 135.9H151c28.1 0 53.4 7.9 53.4 40.5 0 30.1-19.7 42.2-47.5 42.2h-79v-82.7zm83.3 233.7H77.9V272h84.9c34.3 0 56 14.3 56 50.6 0 35.8-25.9 47-57.6 47zm358.5-240.7H376V94h143.7v34.9zM576 305.2c0-75.9-44.4-139.2-124.9-139.2-78.2 0-131.3 58.8-131.3 135.8 0 79.9 50.3 134.7 131.3 134.7 61.3 0 101-27.6 120.1-86.3H509c-6.7 21.9-34.3 33.5-55.7 33.5-41.3 0-63-24.2-63-65.3h185.1c.3-4.2.6-8.7.6-13.2zM390.4 274c2.3-33.7 24.7-54.8 58.5-54.8 35.4 0 53.2 20.8 56.2 54.8H390.4z"
-                        ></path>
+                        <switch>
+                          <g>
+                            <path
+                              fill="currentColor"
+                              d="M42.5,31.2L66,6h-6L39.8,27.6L24,6H4l24.6,33.6L4,66
+			h6l21.3-22.8L48,66h20L42.5,31.2z M12.9,10h8l38.1,52h-8L12.9,10z"
+                            ></path>
+                          </g>
+                        </switch>
                       </svg>
                     </a>
                   </li>
@@ -184,7 +178,9 @@ export default function Contact() {
                 <input type="text" />
               </div>
               <div className={styles.form_group}>
-                <button type="submit"><span>Submit</span></button>
+                <button type="submit">
+                  <span>Submit</span>
+                </button>
               </div>
             </div>
           </div>
@@ -200,27 +196,12 @@ export default function Contact() {
             <div className={styles.ofc_locate}>
               <div className={styles.g_map}>
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d428.83976846030725!2d76.69079519156703!3d30.698205345704512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fee566ec12caf%3A0xe82bcee83eb20ba5!2sPhase%208B%2C%20Sector%2074%2C%20Sahibzada%20Ajit%20Singh%20Nagar%2C%20Punjab%20140308!5e0!3m2!1sen!2sin!4v1705655852672!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25222.91101436853!2d145.04665378741547!3d-37.79322975504289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad646b5d2ba4df7%3A0x4045675218ccd90!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sin!4v1708426908371!5m2!1sen!2sin"
                   width="600"
                   height="400"
+                  allowfullscreen=""
                   loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
-              <h4>Chandigarh</h4>
-              <p>
-                Plot No.14, <br />
-                Rajiv Gandhi Technology Park
-              </p>
-            </div>
-            <div className={styles.ofc_locate}>
-              <div className={styles.g_map}>
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d428.83976846030725!2d76.69079519156703!3d30.698205345704512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fee566ec12caf%3A0xe82bcee83eb20ba5!2sPhase%208B%2C%20Sector%2074%2C%20Sahibzada%20Ajit%20Singh%20Nagar%2C%20Punjab%20140308!5e0!3m2!1sen!2sin!4v1705655852672!5m2!1sen!2sin"
-                  width="600"
-                  height="400"
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
+                  referrerpolicy="no-referrer-when-downgrade"
                 ></iframe>
               </div>
               <h4>Australia</h4>
@@ -236,7 +217,23 @@ export default function Contact() {
                   referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
               </div>
-              <h4>Singapore</h4>
+              <h4>India</h4>
+              <p>
+                Plot No.14, <br />
+                Rajiv Gandhi Technology Park
+              </p>
+            </div>
+            <div className={styles.ofc_locate}>
+              <div className={styles.g_map}>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d428.83976846030725!2d76.69079519156703!3d30.698205345704512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fee566ec12caf%3A0xe82bcee83eb20ba5!2sPhase%208B%2C%20Sector%2074%2C%20Sahibzada%20Ajit%20Singh%20Nagar%2C%20Punjab%20140308!5e0!3m2!1sen!2sin!4v1705655852672!5m2!1sen!2sin"
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <h4>Germany</h4>
               <p>
                 11 Mount Faber Road, <br />
                 The Pearl
@@ -252,9 +249,9 @@ export default function Contact() {
                   referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
               </div>
-              <h4>UK</h4>
+              <h4>USA</h4>
               <p>
-                80 Brook Road, Borehamwood,
+                80 Brook Road, New York,
                 <br />
                 WD6 5HB
               </p>

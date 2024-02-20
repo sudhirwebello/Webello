@@ -65,7 +65,7 @@ export default function Footer() {
 			h6l21.3-22.8L48,66h20L42.5,31.2z M12.9,10h8l38.1,52h-8L12.9,10z"></path></g></switch></svg>
                     </a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a href="" target="_blank">
                       <svg class="svg-inline--fa fa-youtube fa-w-18" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
                     </a>
@@ -74,7 +74,7 @@ export default function Footer() {
                     <a href="" target="_blank">
                       <svg class="svg-inline--fa fa-behance fa-w-18" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="behance" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M232 237.2c31.8-15.2 48.4-38.2 48.4-74 0-70.6-52.6-87.8-113.3-87.8H0v354.4h171.8c64.4 0 124.9-30.9 124.9-102.9 0-44.5-21.1-77.4-64.7-89.7zM77.9 135.9H151c28.1 0 53.4 7.9 53.4 40.5 0 30.1-19.7 42.2-47.5 42.2h-79v-82.7zm83.3 233.7H77.9V272h84.9c34.3 0 56 14.3 56 50.6 0 35.8-25.9 47-57.6 47zm358.5-240.7H376V94h143.7v34.9zM576 305.2c0-75.9-44.4-139.2-124.9-139.2-78.2 0-131.3 58.8-131.3 135.8 0 79.9 50.3 134.7 131.3 134.7 61.3 0 101-27.6 120.1-86.3H509c-6.7 21.9-34.3 33.5-55.7 33.5-41.3 0-63-24.2-63-65.3h185.1c.3-4.2.6-8.7.6-13.2zM390.4 274c2.3-33.7 24.7-54.8 58.5-54.8 35.4 0 53.2 20.8 56.2 54.8H390.4z"></path></svg>
                     </a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
@@ -105,14 +105,7 @@ export default function Footer() {
           <div className={styles.ofc_address}>
             <h3>We Are Global. You Can Reach Us At:</h3>
             <div className={styles.flex_row}>
-                <div className={styles.head_flg}>
-                  <h2><Image src="/images/india_flag.png" width={33} height={22} alt="" /> Chandigarh</h2>
-                  <p>Plot No.E314,</p>
-                  <p>Industrial Area, Phase 8A</p>
-                  <p>Mohali, Punjab, 160071</p>
-                  <p><a href="mailto:info@webello.co">info@webello.co</a></p>
-                  <p><a href="tel:+919749000070">+91 9749 000 070</a></p>
-                </div>
+              
                 <div className={styles.head_flg}>
                   <h2><Image src="/images/aus_flag.png" width={33} height={22} alt="" /> Australia</h2>
                   <p>Melbourne Australia</p>
@@ -120,14 +113,22 @@ export default function Footer() {
                   <p><a href="tel:+919749000070">+91 9749 000 070</a></p>
                 </div>
                 <div className={styles.head_flg}>
-                  <h2><Image src="/images/sing_flag.png" width={33} height={22} alt="" /> Singapore</h2>
-                  <p>Singapore</p>
+                  <h2><Image src="/images/india_flag.png" width={33} height={22} alt="" /> India</h2>
+                  <p>Plot No.E314,</p>
+                  <p>Industrial Area, Phase 8A</p>
+                  <p>Mohali, Punjab, 160071</p>
+                  <p><a href="mailto:info@webello.co">info@webello.co</a></p>
+                  <p><a href="tel:+919749000070">+91 9749 000 070</a></p>
+                </div>
+                <div className={styles.head_flg}>
+                  <h2><Image src="/images/germany.webp" width={33} height={22} alt="" /> Germany</h2>
+                  <p>Berlin</p>
                   <p>11 Mount Faber Road, The Pearl</p>
                   <p><a href="tel:+919749000070">+91 9749 000 070</a></p>
                 </div>
                 <div className={styles.head_flg}>
-                  <h2><Image src="/images/uk_flag.png" width={33} height={22} alt="" /> UK</h2>
-                  <p>80 Brook Road, Borehamwood, WD6 5HB</p>
+                  <h2><Image src="/images/usa.png" width={33} height={22} alt="" /> USA</h2>
+                  <p>80 Brook Road, New York, WD6 5HB</p>
                   <p><a href="tel:+919749000070">+91 9749 000 070</a></p>
                 </div>
             </div>
