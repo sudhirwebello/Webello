@@ -837,6 +837,10 @@ body {
 .our_modals {
   padding: 100px 0;
 
+  @media (max-width:1500px) and (min-width:1300px){
+    transform: scale(.9);
+  }
+
   .row_flex {
     background: #1c1c1c;
     border-radius: 10px;
@@ -1005,6 +1009,10 @@ body {
               height: 181px;
               background-image: url("https://wpriverthemes.com/synck/wp-content/themes/synck/assets/imgs/linenew2.png");
               background-repeat: round;
+
+              @media (max-width:1500px) and (min-width:1300px){
+                right: -50px;
+              }
             }
           }
         }
