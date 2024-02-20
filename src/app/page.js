@@ -421,7 +421,7 @@ export default function Home() {
                           particular business context.
                         </p>
                         <div className={styles.boxed_layout}>
-                          {appServices.map((items, appSrvc) => {
+                          {appServiceMkt.map((items, appSrvc) => {
                             return (
                               <div className={styles.srvc_block} key={appSrvc}>
                                 <Link href={items.appLinkTo}>
