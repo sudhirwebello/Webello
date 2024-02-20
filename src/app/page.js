@@ -15,60 +15,134 @@ import "swiper/css/navigation";
 import { FreeMode, Pagination, Autoplay, Navigation } from "swiper/modules";
 
 const clLogo = [
-  {client_logo: '/images/client_1.png'},
-  {client_logo: '/images/client_2.png'},
-  {client_logo: '/images/client_3.png'},
-  {client_logo: '/images/client_4.png'},
-  {client_logo: '/images/client_5.png'},
-  {client_logo: '/images/client_6.jpg'},
-  {client_logo: '/images/client_7.png'},
-  {client_logo: '/images/client_8.png'},
-  {client_logo: '/images/client_9.png'},
-  {client_logo: '/images/client_10.png'},
-  {client_logo: '/images/client_11.png'},
-  {client_logo: '/images/client_12.png'},
-  {client_logo: '/images/client_13.png'},
-  {client_logo: '/images/client_14.png'},
-  {client_logo: '/images/client_15.png'},
-  {client_logo: '/images/client_16.png'},
-  {client_logo: '/images/client_17.png'},
-  {client_logo: '/images/client_18.png'},
-  {client_logo: '/images/client_19.png'},
-  {client_logo: '/images/client_20.png'},
-]
+  { client_logo: "/images/client_1.png" },
+  { client_logo: "/images/client_2.png" },
+  { client_logo: "/images/client_3.png" },
+  { client_logo: "/images/client_4.png" },
+  { client_logo: "/images/client_5.png" },
+  { client_logo: "/images/client_6.jpg" },
+  { client_logo: "/images/client_7.png" },
+  { client_logo: "/images/client_8.png" },
+  { client_logo: "/images/client_9.png" },
+  { client_logo: "/images/client_10.png" },
+  { client_logo: "/images/client_11.png" },
+  { client_logo: "/images/client_12.png" },
+  { client_logo: "/images/client_13.png" },
+  { client_logo: "/images/client_14.png" },
+  { client_logo: "/images/client_15.png" },
+  { client_logo: "/images/client_16.png" },
+  { client_logo: "/images/client_17.png" },
+  { client_logo: "/images/client_18.png" },
+  { client_logo: "/images/client_19.png" },
+  { client_logo: "/images/client_20.png" },
+];
 const appServices = [
   {
     appLinkTo: "",
     appLinkImg: "/images/app_srvc_icon.webp",
-    appSrvcTitle: "Application development",
+    appSrvcTitle: "Business Needs Analysis",
     appSrvcText:
       "We engineer digital solutions of any complexity, combining our multidisciplinary tech expertise with industry experience.",
   },
   {
     appLinkTo: "",
     appLinkImg: "/images/app_srvc_icon.webp",
-    appSrvcTitle: "Application security",
+    appSrvcTitle: "Customer Experience Strategy",
     appSrvcText:
       "We ensure enterprise-grade application security through audit, testing, secure development practices, and training.",
   },
   {
     appLinkTo: "",
     appLinkImg: "/images/app_srvc_icon.webp",
-    appSrvcTitle: "Software product engineering",
+    appSrvcTitle: "UX Research",
     appSrvcText:
       "From MVP development to post-release support, we help our customers bring their products to market faster and with no pitfalls on the way.",
   },
   {
     appLinkTo: "",
     appLinkImg: "/images/app_srvc_icon.webp",
-    appSrvcTitle: "Enterprise app integration",
+    appSrvcTitle: "Experience Mapping",
     appSrvcText:
       "We integrate enterprise systems to create interconnected ecosystems for seamless enterprise management.",
   },
   {
     appLinkTo: "",
     appLinkImg: "/images/app_srvc_icon.webp",
-    appSrvcTitle: "QA & testing",
+    appSrvcTitle: "ECommerce Strategy",
+    appSrvcText:
+      "We make application testing a part of the software delivery cycle as well as offering it as a standalone service.",
+  },
+];
+const appServiceExp = [
+  {
+    appLinkTo: "",
+    appLinkImg: "/images/app_srvc_icon.webp",
+    appSrvcTitle: "User Experience Design",
+    appSrvcText:
+      "We engineer digital solutions of any complexity, combining our multidisciplinary tech expertise with industry experience.",
+  },
+  {
+    appLinkTo: "",
+    appLinkImg: "/images/app_srvc_icon.webp",
+    appSrvcTitle: "Web Development",
+    appSrvcText:
+      "We ensure enterprise-grade application security through audit, testing, secure development practices, and training.",
+  },
+  {
+    appLinkTo: "",
+    appLinkImg: "/images/app_srvc_icon.webp",
+    appSrvcTitle: "Adobe Experience Manager",
+    appSrvcText:
+      "From MVP development to post-release support, we help our customers bring their products to market faster and with no pitfalls on the way.",
+  },
+  {
+    appLinkTo: "",
+    appLinkImg: "/images/app_srvc_icon.webp",
+    appSrvcTitle: "Mobile App Development",
+    appSrvcText:
+      "We integrate enterprise systems to create interconnected ecosystems for seamless enterprise management.",
+  },
+  {
+    appLinkTo: "",
+    appLinkImg: "/images/app_srvc_icon.webp",
+    appSrvcTitle: "Software Solutions",
+    appSrvcText:
+      "We make application testing a part of the software delivery cycle as well as offering it as a standalone service.",
+  },
+];
+const appServiceMkt = [
+  {
+    appLinkTo: "",
+    appLinkImg: "/images/app_srvc_icon.webp",
+    appSrvcTitle: "Search Engine Optimization",
+    appSrvcText:
+      "We engineer digital solutions of any complexity, combining our multidisciplinary tech expertise with industry experience.",
+  },
+  {
+    appLinkTo: "",
+    appLinkImg: "/images/app_srvc_icon.webp",
+    appSrvcTitle: "Social Media Marketing",
+    appSrvcText:
+      "We ensure enterprise-grade application security through audit, testing, secure development practices, and training.",
+  },
+  {
+    appLinkTo: "",
+    appLinkImg: "/images/app_srvc_icon.webp",
+    appSrvcTitle: "Pay Per Click",
+    appSrvcText:
+      "From MVP development to post-release support, we help our customers bring their products to market faster and with no pitfalls on the way.",
+  },
+  {
+    appLinkTo: "",
+    appLinkImg: "/images/app_srvc_icon.webp",
+    appSrvcTitle: "Content Creation - Blogs",
+    appSrvcText:
+      "We integrate enterprise systems to create interconnected ecosystems for seamless enterprise management.",
+  },
+  {
+    appLinkTo: "",
+    appLinkImg: "/images/app_srvc_icon.webp",
+    appSrvcTitle: "Facebook Advertising",
     appSrvcText:
       "We make application testing a part of the software delivery cycle as well as offering it as a standalone service.",
   },
@@ -201,7 +275,6 @@ const sliderData = [
       "We automate online and offline retail operations with technologies ready for your growth and market changes.",
     backgroundImage: "/images/slide_bg4.jpg",
   },
-  
 ];
 export default function Home() {
   const [bgImage, setBgImage] = useState("/images/slide1_bg.jpg");
@@ -225,10 +298,16 @@ export default function Home() {
         <div className="container">
           <div className={styles.banner_content}>
             <h1>
-            Enhance Your Brand's Visibility with Webello: Your Ultimate Solution for All Online Presence Needs.
+              Enhance Your Brand's Visibility with Webello: Your Ultimate
+              Solution for All Online Presence Needs.
             </h1>
-            <h2>Crafting Strategies, Building Brands: Navigate the Digital Landscape Confidently.</h2>
-            <button><span>Get In Touch with Our Expert Today</span></button>
+            <h2>
+              Crafting Strategies, Building Brands: Navigate the Digital
+              Landscape Confidently.
+            </h2>
+            <button>
+              <span>Get In Touch with Our Expert Today</span>
+            </button>
           </div>
         </div>
       </div>
@@ -244,10 +323,9 @@ export default function Home() {
                     id="uncontrolled-tab-example"
                     className="mb-3"
                   >
-                    
-                    <Tab eventKey="application" title="360 Marketing">
+                    <Tab eventKey="application" title="Digital Strategy">
                       <div className={styles.tabs_content}>
-                        <h3>360 Marketing</h3>
+                        <h3>Digital Strategy</h3>
                         <p>
                           Our software development company delivers corporate
                           and consumer applications based on our profound
@@ -288,9 +366,52 @@ export default function Home() {
                         </div>
                       </div>
                     </Tab>
-                    <Tab eventKey="technology" title="Pay Per Click">
+                    <Tab eventKey="technology" title="Digital Experience">
                       <div className={styles.tabs_content}>
-                        <h3>Pay Per Click</h3>
+                        <h3>Digital Experience</h3>
+                        <p>
+                          Our software development company delivers corporate
+                          and consumer applications based on our profound
+                          understanding of technologies and the markets they
+                          operate in. With our professional mindset, we look
+                          beyond technology to offer viable solutions for your
+                          particular business context.
+                        </p>
+                        <div className={styles.boxed_layout}>
+                          {appServiceExp.map((items, appSrvc) => {
+                            return (
+                              <div className={styles.srvc_block} key={appSrvc}>
+                                <Link href={items.appLinkTo}>
+                                  <div className={styles.flex_inner}>
+                                    <Image
+                                      src={items.appLinkImg}
+                                      width={200}
+                                      height={200}
+                                      alt=""
+                                    />
+                                    <div className={styles.content_block}>
+                                      <h4>{items.appSrvcTitle}</h4>
+                                      <p>{items.appSrvcText}</p>
+                                    </div>
+                                  </div>
+                                  <div className={styles.sent_to}>
+                                    <Image
+                                      src="/images/arrow.png"
+                                      width={26}
+                                      height={28}
+                                      alt=""
+                                    />
+                                  </div>
+                                </Link>
+                              </div>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    </Tab>
+                    <Tab eventKey="digital" title="Digital Marketing">
+                      <div className={styles.tabs_content}>
+                        <h3>Digital Marketing</h3>
                         <p>
                           Our software development company delivers corporate
                           and consumer applications based on our profound
@@ -331,50 +452,7 @@ export default function Home() {
                         </div>
                       </div>
                     </Tab>
-                    <Tab eventKey="digital" title="SEO Services">
-                      <div className={styles.tabs_content}>
-                        <h3>SEO Services</h3>
-                        <p>
-                          Our software development company delivers corporate
-                          and consumer applications based on our profound
-                          understanding of technologies and the markets they
-                          operate in. With our professional mindset, we look
-                          beyond technology to offer viable solutions for your
-                          particular business context.
-                        </p>
-                        <div className={styles.boxed_layout}>
-                          {appServices.map((items, appSrvc) => {
-                            return (
-                              <div className={styles.srvc_block} key={appSrvc}>
-                                <Link href={items.appLinkTo}>
-                                  <div className={styles.flex_inner}>
-                                    <Image
-                                      src={items.appLinkImg}
-                                      width={200}
-                                      height={200}
-                                      alt=""
-                                    />
-                                    <div className={styles.content_block}>
-                                      <h4>{items.appSrvcTitle}</h4>
-                                      <p>{items.appSrvcText}</p>
-                                    </div>
-                                  </div>
-                                  <div className={styles.sent_to}>
-                                    <Image
-                                      src="/images/arrow.png"
-                                      width={26}
-                                      height={28}
-                                      alt=""
-                                    />
-                                  </div>
-                                </Link>
-                              </div>
-                            );
-                          })}
-                        </div>
-                      </div>
-                    </Tab>
-                    <Tab eventKey="data" title="Digital Strategy">
+                    {/* <Tab eventKey="data" title="Digital Strategy">
                       <div className={styles.tabs_content}>
                         <h3>Digital Strategy</h3>
                         <p>
@@ -502,7 +580,7 @@ export default function Home() {
                           })}
                         </div>
                       </div>
-                    </Tab>
+                    </Tab> */}
                   </Tabs>
                 </div>
               </div>
@@ -518,7 +596,12 @@ export default function Home() {
               {clLogo.map((item, logo) => {
                 return (
                   <div className={styles.single_logo} key={logo}>
-                    <Image src={item.client_logo} width={162} height={82} alt="" />
+                    <Image
+                      src={item.client_logo}
+                      width={162}
+                      height={82}
+                      alt=""
+                    />
                   </div>
                 );
               })}
@@ -650,7 +733,7 @@ export default function Home() {
         <div className="container">
           <div className={styles.flex_row}>
             <div className={styles.ovrvw_title_block}>
-              <h3>Webello at a glance</h3>
+              <h3>Facts and Numbers</h3>
             </div>
             <div className={styles.ovrvw_data}>
               {recdata.map((items, records) => {
@@ -925,7 +1008,9 @@ export default function Home() {
                     </p>
                   </div>
                   <div className={styles.sub_attach}>
-                    <button type="submit"><span>Send</span></button>
+                    <button type="submit">
+                      <span>Send</span>
+                    </button>
                   </div>
                 </div>
               </form>

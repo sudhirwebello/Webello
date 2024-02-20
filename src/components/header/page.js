@@ -47,10 +47,10 @@ export default function Header() {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
   return (
@@ -66,226 +66,229 @@ export default function Header() {
             : ""
         }
       >
-        <div className={isScrolled ? 'sticky_header' : ''}>
-        <div className={`global_header ${styles.header}`}>
-          <div className={styles.container_fluid}>
-            <div className={styles.flex_row}>
-              <div className={styles.header_logo}>
-                <Link href="/">
-                <Image
-                  src="/images/logo.png"
-                  width={400}
-                  height={100}
-                  alt=""
-                  priority
-                />
-                </Link>
-              </div>
-              <div className={styles.header_nav}>
-                <ul>
-                  <li
-                    className={styles.dropdown}
-                    onMouseOver={HandleMouse}
-                    onMouseOut={HandleMouseOut}
-                  >
-                    <Link href="">Services</Link>
-                  </li>
-                  <li
-                    className={styles.dropdown}
-                    onMouseOver={handleMouseIndus}
-                    onMouseOut={handleIndusOut}
-                  >
-                    <Link href="">Industries</Link>
-                    <div className={styles.submenu_2}>
-                      <ul>
-                        <li>
-                          <Link href="">Healthcare</Link>
-                        </li>
-                        <li>
-                          <Link href="">Retail</Link>
-                        </li>
-                        <li>
-                          <Link href="">Finance</Link>
-                        </li>
-                        <li>
-                          <Link href="">Insurance</Link>
-                        </li>
-                        <li>
-                          <Link href="">Software & hi-tech</Link>
-                        </li>
-                        <li>
-                          <Link href="">Automotive</Link>
-                        </li>
-                        <li>
-                          <Link href="">Telecommunications</Link>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li>
-                    <Link href="/case-study">Case Studies</Link>
-                  </li>
-                  <li>
-                    <Link href="">Insights</Link>
-                  </li>
-                  <li
-                    className={styles.dropdown}
-                    onMouseOver={handleMouseComp}
-                    onMouseOut={handleCompOut}
-                  >
-                    <Link href="">Company</Link>
-                    <div className={styles.submenu_2}>
-                      <ul>
-                        <li>
-                          <Link href="/about">Overview</Link>
-                        </li>
-                        <li>
-                          <Link href="">Approach</Link>
-                        </li>
-                        <li>
-                          <Link href="">Awards</Link>
-                        </li>
-                        <li>
-                          <Link href="">Partnership</Link>
-                        </li>
-                        <li>
-                          <Link href="">Careers</Link>
-                        </li>
-                        <li>
-                          <Link href="">News</Link>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li>
-                    <Link href="/contact">Contact us</Link>
-                  </li>
-                </ul>
+        <div className={isScrolled ? "sticky_header" : ""}>
+          <div className={`global_header ${styles.header}`}>
+            <div className={styles.container_fluid}>
+              <div className={styles.flex_row}>
+                <div className={styles.header_logo}>
+                  <Link href="/">
+                    <Image
+                      src="/images/logo.png"
+                      width={400}
+                      height={100}
+                      alt=""
+                      priority
+                    />
+                  </Link>
+                </div>
+                <div className={styles.header_nav}>
+                  <ul>
+                    <li
+                      className={styles.dropdown}
+                      onMouseOver={HandleMouse}
+                      onMouseOut={HandleMouseOut}
+                    >
+                      <Link href="">Services</Link>
+                    </li>
+                    <li
+                      className={styles.dropdown}
+                      onMouseOver={handleMouseIndus}
+                      onMouseOut={handleIndusOut}
+                    >
+                      <Link href="">Industries</Link>
+                      <div className={styles.submenu_2}>
+                        <ul>
+                          <li>
+                            <Link href="">Healthcare</Link>
+                          </li>
+                          <li>
+                            <Link href="">Fintech</Link>
+                          </li>
+                          <li>
+                            <Link href="">Manufacturing</Link>
+                          </li>
+                          <li>
+                            <Link href="">Logistics</Link>
+                          </li>
+                          <li>
+                            <Link href="">Automotive</Link>
+                          </li>
+                          <li>
+                            <Link href="">Entertainment and Media</Link>
+                          </li>
+                          <li>
+                            <Link href="">Ecommerce</Link>
+                          </li>
+                          <li>
+                            <Link href="">Education and E-learning</Link>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <Link href="/case-study">Case Studies</Link>
+                    </li>
+                    <li>
+                      <Link href="">Insights</Link>
+                    </li>
+                    <li
+                      className={styles.dropdown}
+                      onMouseOver={handleMouseComp}
+                      onMouseOut={handleCompOut}
+                    >
+                      <Link href="">Company</Link>
+                      <div className={styles.submenu_2}>
+                        <ul>
+                          <li>
+                            <Link href="/about">About Webello</Link>
+                          </li>
+                          <li>
+                            <Link href="">Career</Link>
+                          </li>
+                          <li>
+                            <Link href="">News</Link>
+                          </li>
+                          <li>
+                            <Link href="">Awards and Recognition</Link>
+                          </li>
+                          
+                        </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <Link href="/contact">Contact us</Link>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-          <div
-            className={isHover ? styles.open_submenu1 : ""}
-            onMouseOver={HandleMouse}
-            onMouseOut={HandleMouseOut}
-          >
-            <div className={styles.submenu_1}>
-              <div className="gl_container">
-                <div className={styles.flex_row}>
-                  <div className={styles.links_block}>
-                    <h2>Services</h2>
-                    <ul>
-                      <li>
-                        <Link href="">IT consulting</Link>
-                      </li>
-                      <li>
-                        <Link href="">Software engineering</Link>
-                      </li>
-                      <li>
-                        <Link href="">Application services</Link>
-                      </li>
-                      <li>
-                        <Link href="">Managed IT services</Link>
-                      </li>
-                      <li>
-                        <Link href="">DevOps</Link>
-                      </li>
-                      <li>
-                        <Link href="">Quality assurance & testing</Link>
-                      </li>
-                      <li>
-                        <Link href="">Maintenance & Support</Link>
-                      </li>
-                      <li>
-                        <Link href="">Smart teams</Link>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className={styles.links_block}>
-                    <h2>Solutions</h2>
-                    <div className={styles.flex2_row}>
+            <div
+              className={isHover ? styles.open_submenu1 : ""}
+              onMouseOver={HandleMouse}
+              onMouseOut={HandleMouseOut}
+            >
+              <div className={styles.submenu_1}>
+                <div className="gl_container">
+                  <div className={styles.flex_row}>
+                    <div className={styles.links_block}>
+                      <h2>Digital Strategy</h2>
                       <ul>
                         <li>
-                          <Link href="/services/aem">AEM</Link>
+                          <Link href="">Business Needs Analysis</Link>
                         </li>
                         <li>
-                          <Link href="">CRM</Link>
+                          <Link href="">Customer Experience Strategy</Link>
                         </li>
                         <li>
-                          <Link href="">Digital commerce</Link>
+                          <Link href="">UX Research</Link>
                         </li>
                         <li>
-                          <Link href="">Business process management</Link>
+                          <Link href="">Experience Mapping</Link>
                         </li>
                         <li>
-                          <Link href="">Elearning</Link>
+                          <Link href="">eCommerce Strategy</Link>
                         </li>
                         <li>
-                          <Link href="">HR management</Link>
+                          <Link href="">Mobile Strategy</Link>
                         </li>
                         <li>
-                          <Link href="">Portals</Link>
-                        </li>
-                      </ul>
-                      <ul>
-                        <li>
-                          <Link href="">Data analytics & BI</Link>
+                          <Link href="">Integrated Campaigns</Link>
                         </li>
                         <li>
-                          <Link href="">Artificial intelligence</Link>
-                        </li>
-                        <li>
-                          <Link href="">Robotic process automation</Link>
-                        </li>
-                        <li>
-                          <Link href="">Cloud</Link>
-                        </li>
-                        <li>
-                          <Link href="">Cyber security</Link>
-                        </li>
-                        <li>
-                          <Link href="">AR & VR</Link>
-                        </li>
-                        <li>
-                          <Link href="">Internet of Things</Link>
+                          <Link href="">Content and Personalization</Link>
                         </li>
                       </ul>
                     </div>
-                  </div>
-                  <div className={styles.links_block}>
-                    <h2>Technologies</h2>
-                    <ul>
-                      <li>
-                        <Link href="">Salesforce</Link>
-                      </li>
-                      <li>
-                        <Link href="">SAP Commerce</Link>
-                      </li>
-                      <li>
-                        <Link href="">Adobe Commerce (Magento)</Link>
-                      </li>
-                      <li>
-                        <Link href="">Odoo</Link>
-                      </li>
-                      <li>
-                        <Link href="">Atlassian</Link>
-                      </li>
-                      <li>
-                        <Link href="">AWS</Link>
-                      </li>
-                      <li>
-                        <Link href="">Azure</Link>
-                      </li>
-                      <li>
-                        <Link href="">Power BI</Link>
-                      </li>
-                    </ul>
+                    <div className={styles.links_block}>
+                      <h2>Digital Experience</h2>
+                      <div className={styles.flex2_row}>
+                        <ul>
+                          <li>
+                            <Link href="/services/aem">
+                              User Experience Design
+                            </Link>
+                          </li>
+                          <li>
+                            <Link href="">Web Development</Link>
+                          </li>
+                          <li>
+                            <Link href="">Adobe Experience Manager</Link>
+                          </li>
+                          <li>
+                            <Link href="">Mobile App Development</Link>
+                          </li>
+                          <li>
+                            <Link href="">Software Solutions</Link>
+                          </li>
+                          <li>
+                            <Link href="">AI, Data & Analytics</Link>
+                          </li>
+                          <li>
+                            <Link href="">Cloud Solutions</Link>
+                          </li>
+                          <li>
+                            <Link href="">Managed Services and Support</Link>
+                          </li>
+                        </ul>
+                        {/* <ul>
+                          <li>
+                            <Link href="">Data analytics & BI</Link>
+                          </li>
+                          <li>
+                            <Link href="">Artificial intelligence</Link>
+                          </li>
+                          <li>
+                            <Link href="">Robotic process automation</Link>
+                          </li>
+                          <li>
+                            <Link href="">Cloud</Link>
+                          </li>
+                          <li>
+                            <Link href="">Cyber security</Link>
+                          </li>
+                          <li>
+                            <Link href="">AR & VR</Link>
+                          </li>
+                          <li>
+                            <Link href="">Internet of Things</Link>
+                          </li>
+                        </ul> */}
+                      </div>
+                    </div>
+                    <div className={styles.links_block}>
+                      <h2>Digital Marketing</h2>
+                      <ul>
+                        <li>
+                          <Link href="">Search Engine Optimization</Link>
+                        </li>
+                        <li>
+                          <Link href="">Social Media Marketing</Link>
+                        </li>
+                        <li>
+                          <Link href="">Pay Per Click</Link>
+                        </li>
+                        <li>
+                          <Link href="">Content Creation - Blogs</Link>
+                        </li>
+                        <li>
+                          <Link href="">Facebook Advertising</Link>
+                        </li>
+                        <li>
+                          <Link href="">Instagram Advertising</Link>
+                        </li>
+                        <li>
+                          <Link href="">LinkedIn Business Management</Link>
+                        </li>
+                        <li>
+                          <Link href="">Twitter Advertising</Link>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
         </div>
       </div>
       <div className="mobile_menus">

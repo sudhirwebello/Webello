@@ -159,8 +159,8 @@
               position: absolute;
               right: 0;
               z-index: 1;
-              padding-top: 80px;
-              width: 200px;
+              padding-top: 40px;
+              width: 260px;
               opacity: 0;
               z-index: -99;
               visibility: hidden;
@@ -217,10 +217,17 @@
                     background: url("../../../public/images/ind_bg.jpg");
                     left: 0;
                     top: 0;
+                    opacity: 0;
                   }
                   &:hover {
                     &:after {
                       z-index: 9;
+                      opacity: 1;
+                    }
+                  }
+                  &:first-child{
+                    &:after{
+                      opacity: 1;
                     }
                   }
                   &:nth-child(2) {
@@ -293,9 +300,9 @@
       border-left: 1px solid #c4c4c4;
       padding-left: 32px;
 
-      &:nth-child(2) {
-        width: 45%;
-      }
+      // &:nth-child(2) {
+      //   width: 45%;
+      // }
 
       &:first-child {
         border: 0;
