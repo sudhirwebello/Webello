@@ -766,10 +766,7 @@ export default function Home() {
                 <p>Save time and money with our powerful method.</p>
               </div>
 
-              <a
-                href=""
-                class="theme-btn"
-              >
+              <a href="" class="theme-btn">
                 Learn More <i class="iconoir-arrow-up-right"></i>
               </a>
             </div>
@@ -1080,7 +1077,116 @@ export default function Home() {
           </div>
         </div>
       </div>
-
+      <div className={styles.scontact_modal}>
+        <div className="cust_container">
+          <div className={styles.flex_row}>
+            <div className={styles.contact_from_box}>
+              <div className={styles.contact_inner}>
+                <h5>CONTACT</h5>
+                <h3>Lets get in touch</h3>
+                <p>You can reach us anytime via info@webello.co</p>
+                <div className={styles.form_box}>
+                  <div className={styles.form_row}>
+                    <div className={styles.form_group}>
+                      <label>First Name</label>
+                      <input type="text" placeholder="First Name" />
+                    </div>
+                    <div className={styles.form_group}>
+                      <label>Last Name</label>
+                      <input type="text" placeholder="Last Name" />
+                    </div>
+                    <div className={styles.form_group}>
+                      <label>Email</label>
+                      <input type="text" placeholder="Your Email" />
+                    </div>
+                    <div className={styles.form_group}>
+                      <label>Phone Number</label>
+                      <input type="text" placeholder="Your Number" />
+                    </div>
+                    <div className={styles.form_group}>
+                      <label>Country</label>
+                      <input type="text" placeholder="Your Country" />
+                    </div>
+                    <div className={styles.form_group}>
+                      <textarea
+                        name="message"
+                        placeholder="Leave us a message...."
+                      ></textarea>
+                    </div>
+                    <div className={styles.form_group}>
+                      <input
+                        type="checkbox"
+                        name="acceptance"
+                        value="1"
+                        id="privacy_policy_accept"
+                        aria-invalid="false"
+                      />
+                      <span>You agree to our terms and conditions.</span>
+                    </div>
+                    
+                  </div>
+                  <div className={styles.sub_attach}>
+                      <button type="submit">
+                        <span>Send</span>
+                      </button>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div className={styles.digi_contact}>
+              <div className={styles.digi_info}>
+                <div className={styles.num_box}>
+                  <h3>22+ <span>Years</span></h3>
+                  <p>Field Experience</p>
+                </div>
+                <div className={styles.num_box}>
+                  <h3>700+ <span>Projects</span></h3>
+                  <p>Done Around World</p>
+                </div>
+                <div className={styles.num_box}>
+                  <h3>99%</h3>
+                  <p>Client Satisfaction</p>
+                </div>
+                <div className={styles.num_box}>
+                  <h3>1995+ <span>Years</span></h3>
+                  <p>Established On</p>
+                </div>
+                <div className={styles.num_box}>
+                  <h3>40+</h3>
+                  <p>countries on our global delivery map</p>
+                </div>
+              </div>
+              <div className={styles.digi_info}>
+                <div className={styles.num_box}>
+                <h2><Image src="/images/aus_flag.png" width={33} height={22} alt="" /> Australia</h2>
+                  <h4>Melbourne Australia</h4>
+                  <p><a href="mailto:info@webello.co">info@webello.co</a></p>
+                  <p><a href="tel:+919749000070">+91 9749 000 070</a></p>
+                </div>
+                <div className={styles.num_box}>
+                <h2><Image src="/images/india_flag.png" width={33} height={22} alt="" /> India</h2>
+                  <h4>Plot No.E314,</h4>
+                  <h4>Industrial Area, Phase 8A</h4>
+                  <h4>Mohali, Punjab, 160071</h4>
+                  <p><a href="mailto:info@webello.co">info@webello.co</a></p>
+                  <p><a href="tel:+919749000070">+91 9749 000 070</a></p>
+                </div>
+                <div className={styles.num_box}>
+                <h2><Image src="/images/germany.webp" width={33} height={22} alt="" /> Germany</h2>
+                  <h4>Berlin</h4>
+                  <h4>11 Mount Faber Road, The Pearl</h4>
+                  <p><a href="tel:+919749000070">+91 9749 000 070</a></p>
+                </div>
+                <div className={styles.num_box}>
+                <h2><Image src="/images/usa.png" width={33} height={22} alt="" /> USA</h2>
+                  <h4>80 Brook Road, New York, WD6 5HB</h4>
+                  <p><a href="tel:+919749000070">+91 9749 000 070</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className={styles.contact_form}>
         <div className="container">
           <div className={styles.flex_row}>
