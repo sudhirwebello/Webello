@@ -14,6 +14,7 @@ import "swiper/css/navigation";
 
 import { FreeMode, Pagination, Autoplay, Navigation } from "swiper/modules";
 
+
 const clLogo = [
   { client_logo: "/images/client_1.png" },
   { client_logo: "/images/client_2.png" },
@@ -290,7 +291,7 @@ export default function Home() {
   const handleChange = () => {};
   const defaultValue = "How can we help you?";
   return (
-    <>
+    <div className="main_content">
       <div className={styles.home_banner}>
         <video autoPlay="" loop muted>
           <source src="/videos/header-video.mp4" type="video/mp4"></source>
@@ -608,7 +609,7 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.client_served}>
-            <h3>800+ clients served</h3>
+            <h3>700+ clients served</h3>
 
             <div className={styles.cl_data_row}>
               {clData.map((items, client) => {
@@ -729,7 +730,7 @@ export default function Home() {
           </Swiper>
         </div>
       </div>
-      <div className={styles.ovrvr_block}>
+      {/* <div className={styles.ovrvr_block}>
         <div className="container">
           <div className={styles.flex_row}>
             <div className={styles.ovrvw_title_block}>
@@ -747,7 +748,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <section class="our_modals">
         <div class="cust_container">
           <div class="row_flex">
@@ -1268,6 +1269,6 @@ export default function Home() {
           </div>
         </div>
       </div> */}
-    </>
+    </div>
   );
 }

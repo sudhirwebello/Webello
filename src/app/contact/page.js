@@ -3,7 +3,7 @@ import styles from "./Contact.module.scss";
 
 export default function Contact() {
   return (
-    <>
+    <div className="main_content">
       <div className={styles.inner_banner}>
         <div className="container">
           <div className={styles.inner_banner_text}>
@@ -259,6 +259,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

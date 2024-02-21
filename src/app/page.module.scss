@@ -331,7 +331,7 @@
 .our_clinets {
   position: relative;
   padding: 70px 0;
-  background: #323232;
+  background: #a78900;
 
   @media (max-width: 1200px) {
     padding: 70px 15px;
@@ -342,14 +342,7 @@
   }
 
   .bg_color {
-    background: linear-gradient(
-      279.09deg,
-      #0b75fd 49%,
-      #007aff 50%,
-      #2767f8 57.85%,
-      #d3b62d 75.6%,
-      #fdd000 95.5%
-    );
+    background: linear-gradient(279.09deg, #ffd517 29%, #ffd723 50%, #ffdf4e 58.85%, #fff6ca 70.6%, #ffffff 95.5%);
     width: 100%;
     height: 100%;
     bottom: 0;

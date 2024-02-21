@@ -1,8 +1,11 @@
+// "use client";
+
 import { Inter } from "next/font/google";
 import "./globals.scss";
 import Header from "@/components/header/page";
 import Footer from "@/components/footer/page";
 import "bootstrap/dist/css/bootstrap.min.css";
+// import React, { useEffect } from 'react';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,6 +15,8 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
+ 
   return (
     <html lang="en">
       <head>

@@ -10,7 +10,27 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Offcanvas from "react-bootstrap/Offcanvas";
+
+
+
+
 export default function Header() {
+
+  useEffect(() => {
+    const currentPath = window.location.pathname;
+  
+    const isAIService = currentPath.includes('/services/ai');
+  
+    const headerElement = document.getElementById('header');
+    if (headerElement) {
+      if (isAIService) {
+        headerElement.classList.add('header_black');
+      } else {
+        headerElement.classList.remove('header_black');
+      }
+    }
+  }, []);
+
   const [isHover, setIsHover] = useState(false);
   const [indIsHover, setIndusIsHover] = useState(false);
   const [compIsHover, setCompIsHover] = useState(false);
@@ -55,6 +75,7 @@ export default function Header() {
   }, []);
   return (
     <>
+    <div id="header">
       <div
         className={
           isHover
@@ -129,7 +150,7 @@ export default function Header() {
                       <Link href="/case-study">Case Studies</Link>
                     </li>
                     <li>
-                      <Link href="">Insights</Link>
+                      <Link href="/blog">Insights</Link>
                     </li>
                     <li
                       className={styles.dropdown}
@@ -174,7 +195,7 @@ export default function Header() {
                       <h2>Digital Strategy</h2>
                       <ul>
                         <li>
-                          <Link href="">Business Needs Analysis</Link>
+                          <Link href="/services/ai">Business Needs Analysis</Link>
                         </li>
                         <li>
                           <Link href="">Customer Experience Strategy</Link>
@@ -291,6 +312,7 @@ export default function Header() {
           </div>
         </div>
       </div>
+      </div>
       <div className="mobile_menus">
         {["lg"].map((expand) => (
           <Navbar
@@ -338,7 +360,7 @@ export default function Header() {
                       id={`offcanvasNavbarDropdown-expand-${expand}`}
                     >
                       <h2>Services</h2>
-                      <NavDropdown.Item href="#">
+                      <NavDropdown.Item href="/services/ai">
                         IT consulting
                       </NavDropdown.Item>
                       <NavDropdown.Item href="#">
@@ -418,7 +440,7 @@ export default function Header() {
                       </NavDropdown.Item>
                     </NavDropdown>
                     <Nav.Link href="#action1">Case Studies</Nav.Link>
-                    <Nav.Link href="#action2">Insights</Nav.Link>
+                    <Nav.Link href="/blog">Insights</Nav.Link>
 
                     <NavDropdown
                       title="Company"
