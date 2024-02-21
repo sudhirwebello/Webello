@@ -82,8 +82,8 @@ export default function Footer() {
            <div className={styles.top_wid_menu}>
               <h3>Explore</h3>
               <ul>
-                <li><a href="">ABOUT US</a></li>
-                <li><a href="">WORK</a></li>
+                <li><a href="">ABOUT WEBELLO</a></li>
+                <li><a href="">NEWS</a></li>
                 <li><a href="">INSIGHTS</a></li>
                 <li><a href="">CAREERS</a></li>
                 <li><a href="">CONTACT US</a></li>
@@ -92,17 +92,17 @@ export default function Footer() {
             <div className={styles.top_wid_menu}>
               <h3>Services</h3>
               <ul>
-                <li><a href="">STRATEGY</a></li>
-                <li><a href="">BRANDING</a></li>
+                <li><a href="">UX Research</a></li>
+                <li><a href="">ECommerce Strategy</a></li>
                 <li><a href="">DIGITAL MARKETING</a></li>
                 <li><a href="">GRAPHIC DESIGN</a></li>
-                <li><a href="">EXPERIENCE DESIGN</a></li>
-                <li><a href="">TECHNOLOGY</a></li>
+                <li><a href="">Web Development</a></li>
+                <li><a href="">Pay Per Click</a></li>
               </ul>
             </div>
            </div>
           </div>
-          <div className={styles.ofc_address}>
+          {/* <div className={styles.ofc_address}>
             <h3>We Are Global. You Can Reach Us At:</h3>
             <div className={styles.flex_row}>
               
@@ -132,7 +132,7 @@ export default function Footer() {
                   <p><a href="tel:+919749000070">+91 9749 000 070</a></p>
                 </div>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className={styles.footer_cpy}>
             <div className="container_cust">

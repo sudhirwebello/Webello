@@ -1083,7 +1083,7 @@ export default function Home() {
             <div className={styles.contact_from_box}>
               <div className={styles.contact_inner}>
                 <h5>CONTACT</h5>
-                <h3>Lets get in touch</h3>
+                <h3>Let's get in touch</h3>
                 <p>You can reach us anytime via info@webello.co</p>
                 <div className={styles.form_box}>
                   <div className={styles.form_row}>
@@ -1187,7 +1187,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className={styles.contact_form}>
+      {/* <div className={styles.contact_form}>
         <div className="container">
           <div className={styles.flex_row}>
             <div className={styles.contact_bg}>
@@ -1267,7 +1267,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
