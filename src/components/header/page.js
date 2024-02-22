@@ -11,22 +11,18 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Offcanvas from "react-bootstrap/Offcanvas";
 
-
-
-
 export default function Header() {
-
   useEffect(() => {
     const currentPath = window.location.pathname;
-  
-    const isAIService = currentPath.includes('/services/ai');
-  
-    const headerElement = document.getElementById('header');
+
+    const isAIService = currentPath.includes("/services/ai");
+
+    const headerElement = document.getElementById("header");
     if (headerElement) {
       if (isAIService) {
-        headerElement.classList.add('header_black');
+        headerElement.classList.add("header_black");
       } else {
-        headerElement.classList.remove('header_black');
+        headerElement.classList.remove("header_black");
       }
     }
   }, []);
@@ -75,183 +71,184 @@ export default function Header() {
   }, []);
   return (
     <>
-    <div id="header">
-      <div
-        className={
-          isHover
-            ? styles.open_submenu1
-            : "" || indIsHover
-            ? styles.open_submenu2
-            : "" || compIsHover
-            ? styles.open_submenu3
-            : ""
-        }
-      >
-        <div className={isScrolled ? "sticky_header" : ""}>
-          <div className={`global_header ${styles.header}`}>
-            <div className={styles.container_fluid}>
-              <div className={styles.flex_row}>
-                <div className={styles.header_logo}>
-                  <Link href="/">
-                    <Image
-                      src="/images/logo.png"
-                      width={400}
-                      height={100}
-                      alt=""
-                      priority
-                    />
-                  </Link>
-                </div>
-                <div className={styles.header_nav}>
-                  <ul>
-                    <li
-                      className={styles.dropdown}
-                      onMouseOver={HandleMouse}
-                      onMouseOut={HandleMouseOut}
-                    >
-                      <Link href="">Services</Link>
-                    </li>
-                    <li
-                      className={styles.dropdown}
-                      onMouseOver={handleMouseIndus}
-                      onMouseOut={handleIndusOut}
-                    >
-                      <Link href="">Industries</Link>
-                      <div className={styles.submenu_2}>
-                        <ul>
-                          <li>
-                            <Link href="">Healthcare</Link>
-                          </li>
-                          <li>
-                            <Link href="">Fintech</Link>
-                          </li>
-                          <li>
-                            <Link href="">Manufacturing</Link>
-                          </li>
-                          <li>
-                            <Link href="">Logistics</Link>
-                          </li>
-                          <li>
-                            <Link href="">Automotive</Link>
-                          </li>
-                          <li>
-                            <Link href="">Entertainment and Media</Link>
-                          </li>
-                          <li>
-                            <Link href="">Ecommerce</Link>
-                          </li>
-                          <li>
-                            <Link href="">Education and E-learning</Link>
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li>
-                      <Link href="/case-study">Case Studies</Link>
-                    </li>
-                    <li>
-                      <Link href="/blog">Insights</Link>
-                    </li>
-                    <li
-                      className={styles.dropdown}
-                      onMouseOver={handleMouseComp}
-                      onMouseOut={handleCompOut}
-                    >
-                      <Link href="">Company</Link>
-                      <div className={styles.submenu_2}>
-                        <ul>
-                          <li>
-                            <Link href="/about">About Webello</Link>
-                          </li>
-                          <li>
-                            <Link href="">Career</Link>
-                          </li>
-                          <li>
-                            <Link href="">News</Link>
-                          </li>
-                          <li>
-                            <Link href="">Awards and Recognition</Link>
-                          </li>
-                          
-                        </ul>
-                      </div>
-                    </li>
-                    <li>
-                      <Link href="/contact">Contact us</Link>
-                    </li>
-                  </ul>
+      <div id="header">
+        <div
+          className={
+            isHover
+              ? styles.open_submenu1
+              : "" || indIsHover
+              ? styles.open_submenu2
+              : "" || compIsHover
+              ? styles.open_submenu3
+              : ""
+          }
+        >
+          <div className={isScrolled ? "sticky_header" : ""}>
+            <div className={`global_header ${styles.header}`}>
+              <div className={styles.container_fluid}>
+                <div className={styles.flex_row}>
+                  <div className={styles.header_logo}>
+                    <Link href="/">
+                      <Image
+                        src="/images/logo.png"
+                        width={400}
+                        height={100}
+                        alt=""
+                        priority
+                      />
+                    </Link>
+                  </div>
+                  <div className={styles.header_nav}>
+                    <ul>
+                      <li
+                        className={styles.dropdown}
+                        onMouseOver={HandleMouse}
+                        onMouseOut={HandleMouseOut}
+                      >
+                        <Link href="">Services</Link>
+                      </li>
+                      <li
+                        className={styles.dropdown}
+                        onMouseOver={handleMouseIndus}
+                        onMouseOut={handleIndusOut}
+                      >
+                        <Link href="">Industries</Link>
+                        <div className={styles.submenu_2}>
+                          <ul>
+                            <li>
+                              <Link href="">Healthcare</Link>
+                            </li>
+                            <li>
+                              <Link href="">Fintech</Link>
+                            </li>
+                            <li>
+                              <Link href="">Manufacturing</Link>
+                            </li>
+                            <li>
+                              <Link href="">Logistics</Link>
+                            </li>
+                            <li>
+                              <Link href="">Automotive</Link>
+                            </li>
+                            <li>
+                              <Link href="">Entertainment and Media</Link>
+                            </li>
+                            <li>
+                              <Link href="">Ecommerce</Link>
+                            </li>
+                            <li>
+                              <Link href="">Education and E-learning</Link>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <Link href="/case-study">Case Studies</Link>
+                      </li>
+                      <li>
+                        <Link href="/blog">Insights</Link>
+                      </li>
+                      <li
+                        className={styles.dropdown}
+                        onMouseOver={handleMouseComp}
+                        onMouseOut={handleCompOut}
+                      >
+                        <Link href="">Company</Link>
+                        <div className={styles.submenu_2}>
+                          <ul>
+                            <li>
+                              <Link href="/about">About Webello</Link>
+                            </li>
+                            <li>
+                              <Link href="">Career</Link>
+                            </li>
+                            <li>
+                              <Link href="">News</Link>
+                            </li>
+                            <li>
+                              <Link href="">Awards and Recognition</Link>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <Link href="/contact">Contact us</Link>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div
-              className={isHover ? styles.open_submenu1 : ""}
-              onMouseOver={HandleMouse}
-              onMouseOut={HandleMouseOut}
-            >
-              <div className={styles.submenu_1}>
-                <div className="gl_container">
-                  <div className={styles.flex_row}>
-                    <div className={styles.links_block}>
-                      <h2>Digital Strategy</h2>
-                      <ul>
-                        <li>
-                          <Link href="/services/ai">Business Needs Analysis</Link>
-                        </li>
-                        <li>
-                          <Link href="">Customer Experience Strategy</Link>
-                        </li>
-                        <li>
-                          <Link href="">UX Research</Link>
-                        </li>
-                        <li>
-                          <Link href="">Experience Mapping</Link>
-                        </li>
-                        <li>
-                          <Link href="">eCommerce Strategy</Link>
-                        </li>
-                        <li>
-                          <Link href="">Mobile Strategy</Link>
-                        </li>
-                        <li>
-                          <Link href="">Integrated Campaigns</Link>
-                        </li>
-                        <li>
-                          <Link href="">Content and Personalization</Link>
-                        </li>
-                      </ul>
-                    </div>
-                    <div className={styles.links_block}>
-                      <h2>Digital Experience</h2>
-                      <div className={styles.flex2_row}>
+              <div
+                className={isHover ? styles.open_submenu1 : ""}
+                onMouseOver={HandleMouse}
+                onMouseOut={HandleMouseOut}
+              >
+                <div className={styles.submenu_1}>
+                  <div className="gl_container">
+                    <div className={styles.flex_row}>
+                      <div className={styles.links_block}>
+                        <h2>Digital Strategy</h2>
                         <ul>
                           <li>
-                            <Link href="/services/aem">
-                              User Experience Design
+                            <Link href="/services/ai">
+                              Business Needs Analysis
                             </Link>
                           </li>
                           <li>
-                            <Link href="">Web Development</Link>
+                            <Link href="">Customer Experience Strategy</Link>
                           </li>
                           <li>
-                            <Link href="">Adobe Experience Manager</Link>
+                            <Link href="">UX Research</Link>
                           </li>
                           <li>
-                            <Link href="">Mobile App Development</Link>
+                            <Link href="">Experience Mapping</Link>
                           </li>
                           <li>
-                            <Link href="">Software Solutions</Link>
+                            <Link href="">eCommerce Strategy</Link>
                           </li>
                           <li>
-                            <Link href="">AI, Data & Analytics</Link>
+                            <Link href="">Mobile Strategy</Link>
                           </li>
                           <li>
-                            <Link href="">Cloud Solutions</Link>
+                            <Link href="">Integrated Campaigns</Link>
                           </li>
                           <li>
-                            <Link href="">Managed Services and Support</Link>
+                            <Link href="">Content and Personalization</Link>
                           </li>
                         </ul>
-                        {/* <ul>
+                      </div>
+                      <div className={styles.links_block}>
+                        <h2>Digital Experience</h2>
+                        <div className={styles.flex2_row}>
+                          <ul>
+                            <li>
+                              <Link href="/services/aem">
+                                User Experience Design
+                              </Link>
+                            </li>
+                            <li>
+                              <Link href="">Web Development</Link>
+                            </li>
+                            <li>
+                              <Link href="">Adobe Experience Manager</Link>
+                            </li>
+                            <li>
+                              <Link href="">Mobile App Development</Link>
+                            </li>
+                            <li>
+                              <Link href="">Software Solutions</Link>
+                            </li>
+                            <li>
+                              <Link href="">AI, Data & Analytics</Link>
+                            </li>
+                            <li>
+                              <Link href="">Cloud Solutions</Link>
+                            </li>
+                            <li>
+                              <Link href="">Managed Services and Support</Link>
+                            </li>
+                          </ul>
+                          {/* <ul>
                           <li>
                             <Link href="">Data analytics & BI</Link>
                           </li>
@@ -274,36 +271,37 @@ export default function Header() {
                             <Link href="">Internet of Things</Link>
                           </li>
                         </ul> */}
+                        </div>
                       </div>
-                    </div>
-                    <div className={styles.links_block}>
-                      <h2>Digital Marketing</h2>
-                      <ul>
-                        <li>
-                          <Link href="">Search Engine Optimization</Link>
-                        </li>
-                        <li>
-                          <Link href="">Social Media Marketing</Link>
-                        </li>
-                        <li>
-                          <Link href="">Pay Per Click</Link>
-                        </li>
-                        <li>
-                          <Link href="">Content Creation - Blogs</Link>
-                        </li>
-                        <li>
-                          <Link href="">Facebook Advertising</Link>
-                        </li>
-                        <li>
-                          <Link href="">Instagram Advertising</Link>
-                        </li>
-                        <li>
-                          <Link href="">LinkedIn Business Management</Link>
-                        </li>
-                        <li>
-                          <Link href="">Twitter Advertising</Link>
-                        </li>
-                      </ul>
+                      <div className={styles.links_block}>
+                        <h2>Digital Marketing</h2>
+                        <ul>
+                          <li>
+                            <Link href="">Search Engine Optimization</Link>
+                          </li>
+                          <li>
+                            <Link href="">Social Media Marketing</Link>
+                          </li>
+                          <li>
+                            <Link href="">Pay Per Click</Link>
+                          </li>
+                          <li>
+                            <Link href="">Content Creation - Blogs</Link>
+                          </li>
+                          <li>
+                            <Link href="">Facebook Advertising</Link>
+                          </li>
+                          <li>
+                            <Link href="">Instagram Advertising</Link>
+                          </li>
+                          <li>
+                            <Link href="">LinkedIn Business Management</Link>
+                          </li>
+                          <li>
+                            <Link href="">Twitter Advertising</Link>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -311,7 +309,6 @@ export default function Header() {
             </div>
           </div>
         </div>
-      </div>
       </div>
       <div className="mobile_menus">
         {["lg"].map((expand) => (
@@ -359,84 +356,100 @@ export default function Header() {
                       title="Services"
                       id={`offcanvasNavbarDropdown-expand-${expand}`}
                     >
-                      <h2>Services</h2>
+                      <h2>Digital Strategy</h2>
                       <NavDropdown.Item href="/services/ai">
-                        IT consulting
+                        Business Needs Analysis
+                      </NavDropdown.Item>
+
+                      <NavDropdown.Item href="#">
+                        Customer Experience Strategy
+                      </NavDropdown.Item>
+                      <NavDropdown.Item href="#">UX Research</NavDropdown.Item>
+                      <NavDropdown.Item href="#">
+                        Experience Mapping
                       </NavDropdown.Item>
                       <NavDropdown.Item href="#">
-                        Software engineering
+                        eCommerce Strategy
                       </NavDropdown.Item>
                       <NavDropdown.Item href="#">
-                        Application services
+                        Mobile Strategy
                       </NavDropdown.Item>
                       <NavDropdown.Item href="#">
-                        Managed IT services
-                      </NavDropdown.Item>
-                      <NavDropdown.Item href="#">DevOps</NavDropdown.Item>
-                      <NavDropdown.Item href="#">
-                        Quality assurance & testing
+                        Integrated Campaigns
                       </NavDropdown.Item>
                       <NavDropdown.Item href="#">
-                        Maintenance & Support
+                        Content and Personalization
                       </NavDropdown.Item>
-                      <NavDropdown.Item href="#">Smart teams</NavDropdown.Item>
-                      <h2>Solutions</h2>
-                      <NavDropdown.Item href="#">ERP</NavDropdown.Item>
-                      <NavDropdown.Item href="#">CRM</NavDropdown.Item>
+
+                      <h2>Digital Experience</h2>
                       <NavDropdown.Item href="#">
-                        Digital commerce
+                        User Experience Design
                       </NavDropdown.Item>
                       <NavDropdown.Item href="#">
-                        Business process management
-                      </NavDropdown.Item>
-                      <NavDropdown.Item href="#">Elearning</NavDropdown.Item>
-                      <NavDropdown.Item href="#">
-                        HR management
-                      </NavDropdown.Item>
-                      <NavDropdown.Item href="#">Portals</NavDropdown.Item>
-                      <NavDropdown.Item href="#">
-                        Data analytics & BI
+                        Web Development
                       </NavDropdown.Item>
                       <NavDropdown.Item href="#">
-                        Artificial intelligence
+                        Adobe Experience Manager
                       </NavDropdown.Item>
                       <NavDropdown.Item href="#">
-                        Robotic process automation
+                        Mobile App Development
                       </NavDropdown.Item>
-                      <NavDropdown.Item href="#">Cloud</NavDropdown.Item>
                       <NavDropdown.Item href="#">
-                        Cyber security
+                        Software Solutions
                       </NavDropdown.Item>
-                      <NavDropdown.Item href="#">AR & VR</NavDropdown.Item>
                       <NavDropdown.Item href="#">
-                        Internet of Things
+                        AI, Data & Analytics
                       </NavDropdown.Item>
-                      <h2>Technologies</h2>
-                      <NavDropdown.Item href="#">Salesforce</NavDropdown.Item>
-                      <NavDropdown.Item href="#">SAP Commerce</NavDropdown.Item>
                       <NavDropdown.Item href="#">
-                        Adobe Commerce (Magento)
+                        Cloud Solutions
                       </NavDropdown.Item>
-                      <NavDropdown.Item href="#">Odoo</NavDropdown.Item>
-                      <NavDropdown.Item href="#">Atlassian</NavDropdown.Item>
-                      <NavDropdown.Item href="#">AWS</NavDropdown.Item>
-                      <NavDropdown.Item href="#">Azure</NavDropdown.Item>
-                      <NavDropdown.Item href="#">Power BI</NavDropdown.Item>
+                      <NavDropdown.Item href="#">
+                        Managed Services and Support
+                      </NavDropdown.Item>
+
+                      <h2>Digital Marketing</h2>
+                      <NavDropdown.Item href="#">
+                        Search Engine Optimization
+                      </NavDropdown.Item>
+                      <NavDropdown.Item href="#">
+                        Social Media Marketing
+                      </NavDropdown.Item>
+                      <NavDropdown.Item href="#">
+                        Pay Per Click
+                      </NavDropdown.Item>
+                      <NavDropdown.Item href="#">
+                        Content Creation - Blogsdoo
+                      </NavDropdown.Item>
+                      <NavDropdown.Item href="#">
+                        Facebook Advertising
+                      </NavDropdown.Item>
+                      <NavDropdown.Item href="#">
+                        Instagram Advertising
+                      </NavDropdown.Item>
+                      <NavDropdown.Item href="#">
+                        LinkedIn Business Management
+                      </NavDropdown.Item>
+                      <NavDropdown.Item href="#">
+                        Twitter Advertising
+                      </NavDropdown.Item>
                     </NavDropdown>
                     <NavDropdown
                       title="Industries"
                       id={`offcanvasNavbarDropdown-expand-${expand}`}
                     >
                       <NavDropdown.Item href="#">Healthcare</NavDropdown.Item>
-                      <NavDropdown.Item href="#">Retail</NavDropdown.Item>
-                      <NavDropdown.Item href="#">Finance</NavDropdown.Item>
-                      <NavDropdown.Item href="#">Insurance</NavDropdown.Item>
+                      <NavDropdown.Item href="#">Fintech</NavDropdown.Item>
                       <NavDropdown.Item href="#">
-                        Software & hi-tech
+                        Manufacturing
                       </NavDropdown.Item>
+                      <NavDropdown.Item href="#">Logistics</NavDropdown.Item>
                       <NavDropdown.Item href="#">Automotive</NavDropdown.Item>
                       <NavDropdown.Item href="#">
-                        Telecommunications
+                        Entertainment and Media
+                      </NavDropdown.Item>
+                      <NavDropdown.Item href="#">Ecommerce</NavDropdown.Item>
+                      <NavDropdown.Item href="#">
+                        Education and E-learning
                       </NavDropdown.Item>
                     </NavDropdown>
                     <Nav.Link href="#action1">Case Studies</Nav.Link>
@@ -446,12 +459,14 @@ export default function Header() {
                       title="Company"
                       id={`offcanvasNavbarDropdown-expand-${expand}`}
                     >
-                      <NavDropdown.Item href="#">Overview</NavDropdown.Item>
-                      <NavDropdown.Item href="#">Approach</NavDropdown.Item>
-                      <NavDropdown.Item href="#">Awards</NavDropdown.Item>
-                      <NavDropdown.Item href="#">Partnership</NavDropdown.Item>
-                      <NavDropdown.Item href="#">Careers</NavDropdown.Item>
+                      <NavDropdown.Item href="#">
+                        About Webello
+                      </NavDropdown.Item>
+                      <NavDropdown.Item href="#">Career</NavDropdown.Item>
                       <NavDropdown.Item href="#">News</NavDropdown.Item>
+                      <NavDropdown.Item href="#">
+                        Awards and Recognition
+                      </NavDropdown.Item>
                     </NavDropdown>
                   </Nav>
                 </Offcanvas.Body>
