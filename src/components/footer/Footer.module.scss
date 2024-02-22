@@ -11,6 +11,10 @@
     gap: 70px;
     width: 95%;
 
+    @media (max-width:991px){
+      flex-wrap: wrap;
+    }
+
     .abt_wid {
       h3 {
         font-weight: 700;
@@ -122,8 +126,23 @@
       display: flex;
       justify-content: space-between;
       width: 30%;
+
+      @media (max-width:991px){
+        width: 100%;
+        flex-wrap: wrap;
+
+        
+      }
     }
     .top_wid_menu{
+
+      @media (max-width:991px){
+        width: 100%;
+
+        &:last-child{
+          margin-top: 30px;
+        }
+      }
       h3{
         font-weight: 600;
         margin-bottom: 15px;

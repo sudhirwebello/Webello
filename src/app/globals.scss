@@ -844,6 +844,9 @@ body {
   @media (max-width: 1500px) and (min-width: 1300px) {
     transform: scale(0.9);
   }
+  @media (max-width:991px){
+    padding: 50px 15px;
+  }
 
   .row_flex {
     background: #1c1c1c;
