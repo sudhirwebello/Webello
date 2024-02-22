@@ -208,6 +208,10 @@
     
     .flex_row{
       justify-content: space-between;
+      gap: 0;
+      @media (max-width:575px){
+        justify-content: center;
+      }
 
       p{
         margin: 0;

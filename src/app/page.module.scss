@@ -403,6 +403,8 @@
 
             img{
               max-width: 100%;
+              width: 100%;
+              height: auto;
             }
           }
           svg {
@@ -1223,7 +1225,10 @@
                   display: inline;
                   margin-right: 10px;
                   transform: translateY(1px);
-                  background: #fff;
+                  background: #fff !important;
+                }
+                span{
+                  color: #000;
                 }
               }
             }
