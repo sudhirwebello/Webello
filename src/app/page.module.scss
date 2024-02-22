@@ -1153,6 +1153,7 @@
           letter-spacing: -2px;
           margin-bottom: 13px;
           font-size: 60px;
+          color: #000;
 
           @media (max-width:575px){
             font-size: 35px;
@@ -1203,6 +1204,7 @@
                 padding: 7px 15px;
                 display: block;
                 outline: none !important;
+                background: #fff;
               }
               textarea {
                 resize: none;
@@ -1309,6 +1311,7 @@
             line-height: 1;
             font-weight: 600;
             margin-bottom: 11px;
+            color: #000;
             span {
               font-size: 20px;
               font-weight: 400;
@@ -1318,6 +1321,7 @@
             font-size: 22px;
             line-height: 1;
             margin-bottom: 11px;
+            color: #000;
             
           }
           p{
