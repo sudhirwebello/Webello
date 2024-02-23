@@ -190,6 +190,32 @@
                   background: transparent !important;
                   line-height: 1 !important;
                   padding-top: 0px !important;
+                  position: relative;
+                  padding-left: 20px;
+
+                  &:before {
+                    content: "";
+                    width: 12px;
+                    height: 1px;
+                    background: black;
+                    left: 0;
+                    top: 10px;
+                    position: absolute;
+                    transition: 0.3s;
+                   
+                  }
+
+                  &:hover {
+                    &:before{
+                      width: 17px;
+                    height: 1px;
+                    background: $primaryColor;
+                    }
+                    a{
+                      padding-left: 5px !important;
+                    }
+
+                  }
                   a {
                     color: #323232;
                     font-weight: 500;
@@ -199,6 +225,7 @@
                     font-size: inherit;
                     margin: 0;
                     padding: 0 !important;
+                    transition: 0.3s;
 
                     &:after,
                     &:before {
@@ -206,7 +233,7 @@
                     }
 
                     &:hover {
-                      color: $primaryColor;
+                      color: $primaryColor !important;
                     }
                   }
                   &:after {
@@ -320,9 +347,30 @@
       gap: 16px;
       flex-direction: column;
       width: 100%;
+      padding: 0px;
 
       li {
         list-style: none;
+        position: relative;
+        padding-left: 20px;
+
+        &:hover {
+          &:before {
+            background: $primaryColor;
+            width: 17px;
+          }
+        }
+
+        &:before {
+          content: "";
+          width: 12px;
+          height: 1px;
+          background: black;
+          left: 0;
+          top: 10px;
+          position: absolute;
+          transition: 0.3s;
+        }
 
         a {
           color: #323232;
@@ -331,9 +379,11 @@
           font-size: 15px;
           text-decoration: none !important;
           font-weight: 500;
+          transition: 0.3s;
 
           &:hover {
-            color: $primaryColor;
+            color: $primaryColor !important;
+            padding-left: 5px;
           }
         }
       }
